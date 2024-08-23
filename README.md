@@ -17,3 +17,6 @@ A simple, lightweight note-taking application inspired by Google Keep. This app 
 - **SCSS**: Styled using SCSS for better modularity and theming.
 - **TypeScript**: Developed with TypeScript for better type safety and maintainability.
 - **Local Storage**: Utilized browser's local storage for persisting data.
+
+## LIVE DEMO LINK
+https://notes-app-2fceb.web.app/
