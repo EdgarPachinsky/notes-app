@@ -1,0 +1,32 @@
+.add-note{
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .add-note-card{
+    width: 500px;
+    transition: .3s;
+
+    &-focused{
+      transition: .3s;
+      @include box-shadow-elevation-1;
+    }
+
+    .input-container{
+
+      mat-form-field{
+        width: 100%;
+      }
+    }
+
+    .mat-mdc-card-content{
+      padding-bottom: 0!important;
+    }
+
+    button{
+      margin-bottom: 20px;
+      margin-right: 10px;
+    }
+  }
+}

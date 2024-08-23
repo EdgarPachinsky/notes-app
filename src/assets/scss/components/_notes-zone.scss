@@ -1,0 +1,55 @@
+.notes-status-place{
+  padding-left: 20px;
+  font-family: FuzzyBubbles;
+}
+.notes-zone{
+  //padding: 10px;
+  display: flex;
+  flex-direction: row;
+
+  flex-wrap: wrap;
+  width: 100%;
+  //border: 2px solid $color-green-medium;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+
+  .note-card{
+    margin: 10px;
+    min-width: 240px;
+
+    &:hover{
+      cursor: pointer;
+      @include box-shadow-elevation-1;
+    }
+
+    &:hover .title-and-actions .mat-card-actions{
+      display: flex;
+    }
+
+    .title-and-actions{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .mat-card-actions{
+        flex-direction: row;
+        display: none;
+
+        .mat-card-action{
+          border: 2px solid;
+          border-radius: 4px;
+          margin-right: 5px;
+          padding: 0 3px;
+
+          mat-icon{
+            font-size: 20px;
+            position: relative;
+            top: 4px;
+            left: 1px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+<div class="add-note"
+>
+  <mat-card
+    appClickedOutside
+    (clickedOutside)="handleClickEvent($event)"
+    class="add-note-card"
+    [ngClass]="{'add-note-card-focused': activeNoteAdd}"
+    appearance="outlined">
+    <mat-card-content [formGroup]="formGroup">
+      @if(activeNoteAdd){
+        <div class="input-container">
+          <mat-form-field class="example-full-width">
+            <mat-label>Title</mat-label>
+            <input formControlName="title" matInput>
+          </mat-form-field>
+        </div>
+      }
+      <div class="input-container">
+        <mat-form-field class="example-full-width">
+          <mat-label>Note</mat-label>
+          <textarea formControlName="description" matInput rows="1"></textarea>
+        </mat-form-field>
+      </div>
+      @if(activeNoteAdd){
+        <div>
+          <button mat-button mat-raised-button (click)="addNote()">+ ADD NOTE</button>
+          <button mat-button (click)="activeNoteAdd=false">CANCEL</button>
+        </div>
+      }
+    </mat-card-content>
+
+  </mat-card>
+</div>

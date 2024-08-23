@@ -1,0 +1,41 @@
+<div>
+  <div class="notes-status-place">
+    @if (isPinned) {
+      @if (noteManagementService.getAllNotes(isPinned).length) {
+        Pinned notes
+      }
+    } @else {
+      @if (noteManagementService.getAllNotes(true).length &&
+      noteManagementService.getAllNotes(isPinned).length) {
+        Other Notes
+      }
+    }
+  </div>
+
+  <div class="notes-zone">
+    @for (note of noteManagementService.getAllNotes(isPinned); track note.uniqueId) {
+      <mat-card
+        appClickedOutside
+        class="note-card"
+        appearance="outlined">
+        <mat-card-content>
+          <div class="title-and-actions">
+            {{ note.title }}
+            <div class="mat-card-actions">
+              <div class="mat-card-action" [matTooltip]="note.isPinned?'UnPin':'Pin'"
+                   (click)="pinAction(note,!note.isPinned)">
+                <mat-icon>push_pin</mat-icon>
+              </div>
+              <div class="mat-card-action" [matTooltip]="'Delete'" (click)="deleteAction(note)">
+                <mat-icon>delete</mat-icon>
+              </div>
+            </div>
+          </div>
+          <div>{{ note.description }}</div>
+        </mat-card-content>
+      </mat-card>
+    }
+
+  </div>
+
+</div>

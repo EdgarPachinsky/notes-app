@@ -1,0 +1,14 @@
+.navbar{
+  padding: 10px;
+  font-family: FuzzyBubbles;
+
+  .app-description{
+    padding-bottom: 10px;
+    width: max-content;
+    border-bottom: 1px solid $color-green-dark;
+  }
+
+  .app-name{
+    font-size: 30px;
+  }
+}
