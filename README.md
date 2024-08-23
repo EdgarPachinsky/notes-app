@@ -1,27 +1,19 @@
-# NotesApp
+# Simple Note App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+A simple, lightweight note-taking application inspired by Google Keep. This app allows users to add, delete, and edit notes, as well as pin important notes for quick access. It is designed to be minimalistic and easy to use, without support for images or background colors. This application is created to practice Angular skills and to serve as a portfolio project.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Add Notes**: Quickly add notes with a title and description.
+- **Edit Notes**: Modify existing notes to update their content.
+- **Delete Notes**: Remove notes that are no longer needed.
+- **Pin Notes**: Pin important notes to keep them at the top of your list.
+- **Local Storage**: All notes are stored in the browser's local storage, ensuring persistence across sessions.
 
-## Code scaffolding
+## Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- **Angular**: Built using Angular framework for a robust and scalable application.
+- **Angular Material**: Utilized Angular Material components for a clean and user-friendly interface.
+- **SCSS**: Styled using SCSS for better modularity and theming.
+- **TypeScript**: Developed with TypeScript for better type safety and maintainability.
+- **Local Storage**: Utilized browser's local storage for persisting data.
